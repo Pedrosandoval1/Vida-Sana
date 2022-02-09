@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../estilos/reset.css">
+    <link rel="stylesheet" href="../estilos/generales.css">
+    <link rel="stylesheet" href="../estilos/contactos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor_img">
+            <div class="header_lyrics">
+                <a href="../index.html"><img class="header_img"src="../img/asd.jpg" alt="es una imagen de logo"/></a>
+              </div>
+        </div>
+        <nav class="header_nav">
+            <ul class="header_ul">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html"> Servicios</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="proyectos.html">Proyecto</a></li>
+            </ul>
+        </nav>
+        <div class="div_button">
+        <button onclick="toggleMenu()"><img class="icono" src="https://img.icons8.com/ios/50/000000/double-down--v1.png"/></button>
+        <div>
+    </header>
+    <div class="nav_desplegable" style="display: none">
+        <nav class="header_nav_mobile">
+          <ul class="header_ul_mobile style=" text-decoration: none;>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html"> Servicios</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="proyectos.html">Proyecto</a></li>
+          </ul>
+        </nav>
+      </div>
+    <main class="main">
+        <div class="main_div"> 
+            <img class="main_img1" src="../img/doc4.jpg " alt="">
+        </div>
+    
+        <div class="main_titulo">
+            <h1>Nos Encontramos</h1>
+        </div>
+
+        <div class="div_img2">
+            <img class="div_curva" src="../img/vetcurva.jpg" alt="imagen de la veterinaria del 10 de octubre">
+            <img class="div_curva" src="../img/curva.jpg" alt="">
+        </div>
+        <div class="div_referencia">
+            <p class="div_titulo1">Referencia:</p>
+            <p class="div_titulo2">se encuentra en San Juan de Lurigancho, José Carlos Mariatuegui, al costado del estadio (JCM)</p>
+        </div>
+        <div class="div_img3">
+            <img class="div_curva" src="../img/curva.jpg" alt="imagen de la veterinaria del 10 de octubre">
+            <img class="div_curva" src="../img/vetcurva.jpg" alt="imagen de la veterinaria del 10 de octubre">
+        </div>
+        <div class="div_referencia1">
+            <p class="div_titulo1">Referencia</p>
+            <p class="div_titulo2">se encuentra en San Juan de Lurigancho, José Carlos Mariatuegui, al costado del estadio (JCM)</p>
+        </div>
+
+        <div class="formulario">
+            <p>formulario</p>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer_div" >
+           <p>horarios de atención</p>
+           <p> Lunes a Sábados <br class="comodo"> 9am-1pm y 2pm-6pm <br> Domingos <br> 9am-1pm y 2pm-5pm </p>
+           <p>VIDA SANA © 2022. Todos los derechos reservados.</p>
+        </div>
+        <table border="1"  >
+            <tr>
+                <td> Redes Sociales</td>
+            </tr>
+        </table >
+             <p>facebook <br> instagram <br>youtube <br> twitter</p>
+           
+       </footer>
+  
+</body>
+       <script>
+        function toggleMenu() {
+          const navMobile = document.querySelector(".nav_desplegable");
+  
+          if (navMobile.hasAttribute('show')) {
+              navMobile.removeAttribute("show");
+              navMobile.style.display = "none"
+          } else {
+              navMobile.setAttribute("show", "true");
+              navMobile.style.display = "block"
+          }
+        }
+      </script>
+</html>
+
+
+

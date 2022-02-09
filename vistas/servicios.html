@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../estilos/reset.css">
+    <link rel="stylesheet" href="../estilos/servicios.css">
+    <link rel="stylesheet" href="../estilos/generales.css">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViDA SANA</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_lyrics">
+            <a href="../index.html"><img class="header_img"src="../img/asd.jpg"alt="es una imagen de logo"/></a>
+          </div>
+        <nav class="header_nav">
+            <ul class="header_ul">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html"> Servicios</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="proyectos.html">Proyecto</a></li>
+            </ul>
+        </nav>
+        <div class="div_button">
+            <button onclick="toggleMenu()"><img class="icono" src="https://img.icons8.com/ios/50/000000/double-down--v1.png"/></button>
+        </div>
+    </header>
+    <div class="nav_desplegable" style="display: none">
+        <nav class="header_nav_mobile">
+          <ul class="header_ul_mobile style=" text-decoration: none;>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html"> Servicios</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="proyectos.html">Proyecto</a></li>
+          </ul>
+        </nav>
+      </div>
+    <main class="main">
+        <div class="main_contenedor"> 
+            <img class="contenedor_img" src="../img/doc2.jpg" alt="">
+        </div>
+        <div class="main_div">
+            <h1 class="main_h1"> TE OFRECEMOS </h1>
+        </div>
+        <div class="div_contenedor">
+            <div class="main_div1">
+                <img class="main_img" src="../img/doc.jpg" alt="tratamiento">
+                <p class="main_text"> 
+                   TRATAMIENTOS
+                </p>
+           </div>
+        </div>
+
+        <div class="div_contenedor2">
+            <div class="main_div2">
+                <img class="main_img1" src="../img/cirugia (1).png  " alt="tratamiento">
+                <p class="main_text1"> 
+                    CIRUGIAS
+                </p>
+           </div>
+        </div>
+    <div class="div_contenedor3">
+        <div class="contenedor">
+            <img class="div_img3" src="../img/Sin título.png"  alt="internamiento" />
+            <div class="div_costado">Proximamente <br> Internamientos</div>
+          </div>
+        </div>          
+    </main>
+    <footer class="footer">
+        <div>
+            <h1>horario de atención</h1>
+        </div>
+    </footer>
+</body>
+    <script>
+        function toggleMenu() {
+          const navMobile = document.querySelector(".nav_desplegable");
+  
+          if (navMobile.hasAttribute('show')) {
+              navMobile.removeAttribute("show");
+              navMobile.style.display = "none"
+          } else {
+              navMobile.setAttribute("show", "true");
+              navMobile.style.display = "block"
+          }
+        }
+      </script>
+</html>
