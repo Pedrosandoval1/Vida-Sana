@@ -1,0 +1,78 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    "img img"
+    "somos somos"
+    "tbj tbj"
+    "carnet carnet";
+}
+.div_main {
+  width: 100%;
+  grid-area: img;
+}
+.main_img1 {
+  display: flex;
+  width: 100%;
+}
+.div_tbj {
+  grid-area: tbj;
+  text-align: center;
+  font-size: 50px;
+}
+.div_somos {
+  grid-area: somos;
+  font-size: 35px;
+}
+.carnets {
+  grid-area: carnet;
+ padding: 40px;
+  text-align: center;
+}
+.div_carnet {
+  display: flex;
+  justify-content: space-evenly;
+}
+.div_carnet1{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 35px 60px 20px 60px ;
+}
+.div_carnet img {
+  width: 100px;
+}
+.div_carnet1 img {
+  width: 100px;
+}
+@media screen and (max-width:426px) {
+  .div_somos {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:426px) {
+  .div_tbj {
+    font-size: 25px;
+    background-color: aquamarine;
+  }
+}
+@media screen and (max-width:426px) {
+  .div_carnet, .img1 {
+  
+   flex-direction: column;
+  padding: 20px;
+  }
+}
+@media screen and (max-width:426px) {
+  .div_carnet1, .img1 {
+  
+   flex-direction: column;
+  padding: 0px 0px 20px 20px;
+  }
+}
+@media screen and (max-width:426px) {
+  .carnets {
+   
+   padding: 8px;
+    
+  }
+ 
+}

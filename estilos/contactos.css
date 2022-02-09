@@ -1,0 +1,79 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    "img1 img1"
+    "encabezado encabezado"
+    "img2 img2"
+    "referencia referencia"
+    "img3 img3"
+    "referencia1 referencia1"
+    "formulario formulario"
+    "contacto contacto"
+    "footer footer";
+}
+.main_div{
+  width: 100%;
+}
+.main_img1 {
+  display: flex;
+  width: 200%;
+  grid-area: img1;
+}
+.main_titulo {
+  display: flex;
+  justify-content: center;
+  grid-area: encabezado;
+}
+.main_titulo h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  text-align: Regular 400 italic;
+ 
+}
+.div_img2 {
+  grid-area: img2;
+  display: flex;
+  width: 100%;
+}
+.div_curva{
+  width: 50%;
+}
+.div_referencia {
+  grid-area: referencia;
+  margin: 15px;
+  text-align: start;
+}
+.div_titulo1{
+  width: 100%;
+  font-size: 50px;
+}
+.div_titulo2{
+  font-size: 40px;
+}
+.div_img3 {
+  display: flex;
+  grid-area: img3;
+}
+.div_referencia1 {
+  grid-area: referencia1;
+  margin: 15px;
+  text-align: start;
+}
+.formulario{
+  grid-area: formulario;
+}
+@media screen and (max-width: 425px) {
+  .div_titulo1{
+    font-size: 30px;
+  }
+  .div_titulo2{
+    font-size: 25px;
+  }
+  .main_titulo h1{
+    font-size: 35px;
+  }
+  .main_titulo{
+    background-color: #4fa8fb;
+  }
+}
