@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./estilos/index.css" />
+    <link rel="stylesheet" href="estilos/reset.css" />
+    <link rel="stylesheet" href="estilos/generales.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIDA SANA</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_lyrics">
+        <a href="./index.html"><img class="header_img"src="./img/asd.jpg"alt="es una imagen de logo"/></a>
+      </div>
+      <nav class="header_nav">
+        <ul class="header_ul" >
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./vistas/servicios.html"> Servicios</a></li>
+          <li><a href="./vistas/contactos.html">Contactos</a></li>
+          <li><a href="./vistas/equipo.html">Equipo</a></li>
+          <li><a href="./vistas/proyectos.html">Proyecto</a></li>
+        </ul>
+      </nav>
+      <div class="div_button">
+      <button onclick="toggleMenu()"><img class="icono" src="https://img.icons8.com/ios/50/000000/double-down--v1.png"/></button>
+    </div>
+    </header>
+    <div class="nav_desplegable" style="display: none">
+      <nav class="header_nav_mobile">
+        <ul class="header_ul_mobile style=" text-decoration: none;>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./vistas/servicios.html"> Servicios</a></li>
+          <li><a href="./vistas/contactos.html">Contactos</a></li>
+          <li><a href="./vistas/equipo.html">Equipo</a></li>
+          <li><a href="./vistas/proyectos.html">Proyecto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main">
+      <div class="main_div">
+        <img class="main_img1" src="./img/000.jpg" alt="imagen del doctor" />
+      </div>
+      <div class="main_section">
+        <img class="main_img" src="./img/niño_nuevo.png" alt="imagen de niño" />
+        <p class="main_text">
+          somos los indicados en el <br />
+          cuidado de tu mascota
+        </p>
+      </div>
+      <div class="div_container_img2">
+      <img class="main_img2" src="./img/dog marron.png" />
+    </div>
+      <div class="main_section1">
+        <p class="main_text1">
+          somos los indicados en el <br />
+          cuidado de tu mascota
+        </p>
+        <img
+          class="main_img3"
+          src="./img/perro_polo_amarillo.jpg"
+          alt="imagen de niño"
+        />
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+        <h1>horario de atención</h1>
+      </div>
+    </footer>
+  </body>
+    <script>
+      function toggleMenu() {
+        const navMobile = document.querySelector(".nav_desplegable");
+
+        if (navMobile.hasAttribute('show')) {
+            navMobile.removeAttribute("show");
+            navMobile.style.display = "none"
+        } else {
+            navMobile.setAttribute("show", "true");
+            navMobile.style.display = "block"
+        }
+      }
+    </script>
+</html>
