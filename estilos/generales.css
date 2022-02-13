@@ -16,7 +16,17 @@ main {
 }
 .header_img {
   padding: 10px 0 0 10px;
-  width: 10vw;
+  width: 130px;
+  animation-name:aparecer;
+  animation-duration: 2s;
+}
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 .header_ul {
   display: flex;
@@ -25,7 +35,19 @@ main {
 .header_ul li {
   padding: 15px 15px;
   text-decoration: none;
-}
+  animation-duration: 2s; 
+  animation-name: aparecer;
+  font-size: 20px;
+  
+ }
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
 footer {
   background-color: #03a9f4;
   padding: 50px;
