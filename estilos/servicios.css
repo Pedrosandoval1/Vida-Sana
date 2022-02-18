@@ -1,11 +1,12 @@
 .main {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas:"img img" 
-  "text1 text1"
-  "elemento1 elemento1"
-  "elemento2 elemento2"
-  "elemento3 elemento3";
+  grid-template-areas:
+    "img img"
+    "text1 text1"
+    "elemento1 elemento1"
+    "elemento2 elemento2"
+    "elemento3 elemento3";
 }
 .main_contenedor {
   width: 100%;
@@ -14,24 +15,23 @@
   display: flex;
   width: 100%;
   grid-area: img;
-  
 }
 .main_h1 {
   width: 100%;
   font-size: 40px;
   text-align: center;
 }
-.main_div{
-  grid-area:text1 ;
+.main_div {
+  grid-area: text1;
 }
-.div_contenedor{
+.div_contenedor {
   grid-area: elemento1;
 }
-.main_div1{
+.main_div1 {
   width: 100%;
   align-items: center;
 }
-.div_contenedor2{
+.div_contenedor2 {
   grid-area: elemento2;
 }
 .main_div2 {
@@ -54,8 +54,8 @@
   font-size: 40px;
   text-align: center;
 }
-.div_contenedor3{
-grid-area: elemento3;
+.div_contenedor3 {
+  grid-area: elemento3;
 }
 
 .div_img3 {
@@ -63,36 +63,34 @@ grid-area: elemento3;
   width: 100%;
 }
 
-
 @media screen and (max-width: 426px) {
-  .main_text, .main_text1{
+  .main_text,
+  .main_text1 {
     width: 100%;
     font-size: 25px;
   }
 }
 
 @media screen and (max-width: 426px) {
-  .main_img, .main_img1{
+  .main_img,
+  .main_img1 {
     width: 100%;
   }
 }
 @media screen and (min-width: 426px) {
-  .main_div2, .main_div1 {
+  .main_div2,
+  .main_div1 {
     display: flex;
-
   }
 }
-@media screen and (max-width:426px){
-  .div_costado{
+@media screen and (max-width: 426px) {
+  .div_costado {
     font-size: 25px;
   }
 }
-@media screen and (min-width:426px) {
-  .main_div2{
+@media screen and (min-width: 426px) {
+  .main_div2 {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
   }
 }
-
-
-
