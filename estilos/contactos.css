@@ -59,10 +59,14 @@
   grid-area: referencia1;
   margin: 15px;
   text-align: start;
+
 }
 .formulario{
   grid-area: formulario;
+  
 }
+
+
 @media screen and (max-width: 425px) {
   .div_titulo1{
     font-size: 30px;

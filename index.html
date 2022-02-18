@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./estilos/index.css" />
-    <link rel="stylesheet" href="estilos/reset.css" />
-    <link rel="stylesheet" href="estilos/generales.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <title>VIDA SANA</title>
+    <link rel="stylesheet" href="./estilos/index.css" />
+    <link rel="stylesheet" href="estilos/reset.css" />
+    <link rel="stylesheet" href="estilos/generales.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <header class="header">
       <div class="header_lyrics">
-        <a href="./index.html"><img class="header_img"src="./img/asd.jpg"alt="es una imagen de logo"/></a>
+        <a href="./index.html"
+          ><img
+            class="header_img"
+            src="./img/asd.jpg"
+            alt="es una imagen de logo"
+        /></a>
       </div>
       <nav class="header_nav">
-        <ul class="header_ul" >
+        <ul class="header_ul">
           <li><a href="./index.html">Inicio</a></li>
           <li><a href="./vistas/servicios.html"> Servicios</a></li>
           <li><a href="./vistas/contactos.html">Contactos</a></li>
@@ -24,8 +39,13 @@
         </ul>
       </nav>
       <div class="div_button">
-      <button onclick="toggleMenu()"><img class="icono" src="https://img.icons8.com/ios/50/000000/double-down--v1.png"/></button>
-    </div>
+        <button onclick="toggleMenu()">
+          <img
+            class="icono"
+            src="https://img.icons8.com/ios/50/000000/double-down--v1.png"
+          />
+        </button>
+      </div>
     </header>
     <div class="nav_desplegable" style="display: none">
       <nav class="header_nav_mobile">
@@ -50,8 +70,8 @@
         </p>
       </div>
       <div class="div_container_img2">
-      <img class="main_img2" src="./img/dog marron.png" />
-    </div>
+        <img class="main_img2" src="./img/dog marron.png" />
+      </div>
       <div class="main_section1">
         <p class="main_text1">
           somos los indicados en el <br />
@@ -64,23 +84,93 @@
         />
       </div>
     </main>
-    <footer class="footer">
-      <div>
-        <h1>horario de atención</h1>
+    <footer class="footer ">
+      <div class="container">
+        <div class="d-flex justify-content-center ">
+          <img
+            class="header_img1"
+            src="./img/asd.jpg"
+            alt="es una imagen de logo"
+          />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-1">
+            <img
+              src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/000000/external-gps-location-xnimrodx-blue-xnimrodx.png"
+            />
+          </div>
+          <div class="col-sm-2"><p>nuestro local</p></div>
+          <div class="col-sm-1">
+            <img
+              src="https://img.icons8.com/external-nawicon-flat-nawicon/64/000000/external-phone-call-communication-nawicon-flat-nawicon-2.png"
+            />
+          </div>
+          <div class="col-sm-2"><p>nuestro local</p></div>
+          <div class="col-sm-1">
+            <img
+              src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-mail-communication-kiranshastry-lineal-color-kiranshastry.png"
+            />
+          </div>
+          <div class="col-sm-2"><p>nuestro local</p></div>
+          <div class="col-sm-1">
+            <img src="https://img.icons8.com/doodle/64/000000/whatsapp.png" />
+          </div>
+          <div class="col-sm-2"><p>nuestro local</p></div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+          <div class="row">
+            <p class="p">Horario de Atención</p>
+            <div class="col-3">
+              <p>Lunes a Sábado</p>
+            </div>
+            <div class="col-6">
+              <p>Domingo</p>
+            </div>
+          <div class="container">
+            <div class="row">
+            <div class="col-3">
+              <p> 9am-1pm y 2pm-7pm</p>
+            </div>
+            <div class="col-3">
+              <p>9am-1pm y 2pm-6pm</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div>
+            <h3 class="mb-3">Redes Sociales</h3>
+            <div class="fs-2">
+              <i class="bi bi-facebook text-primary"></i>
+              <i class="bi bi-whatsapp" style="color: rgb(113, 236, 101)"></i>
+              <i class="bi bi-youtube" style="color: red"></i>
+              <i class="bi bi-twitter text-primary"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
-    <script>
-      function toggleMenu() {
-        const navMobile = document.querySelector(".nav_desplegable");
+  <script>
+    function toggleMenu() {
+      const navMobile = document.querySelector(".nav_desplegable");
 
-        if (navMobile.hasAttribute('show')) {
-            navMobile.removeAttribute("show");
-            navMobile.style.display = "none"
-        } else {
-            navMobile.setAttribute("show", "true");
-            navMobile.style.display = "block"
-        }
+      if (navMobile.hasAttribute("show")) {
+        navMobile.removeAttribute("show");
+        navMobile.style.display = "none";
+      } else {
+        navMobile.setAttribute("show", "true");
+        navMobile.style.display = "Sblock";
       }
-    </script>
+    }
+  </script>
 </html>
