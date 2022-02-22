@@ -101,9 +101,3 @@ footer {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 426px) {
-  .center {
-    display: flex;
-    justify-content: center;
-  }
-}
