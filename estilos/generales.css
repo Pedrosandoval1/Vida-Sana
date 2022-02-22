@@ -23,8 +23,8 @@ main {
   align-content: centerS;
 }
 .header_img1 {
-  padding: 10px 0 0 10px;
-  width: 120px;
+  width: 15%;
+  margin-bottom: 40px;
 }
 .header_ul {
   display: flex;
@@ -33,23 +33,21 @@ main {
 .header_ul li {
   padding: 15px 15px;
   text-decoration: none;
-  animation-duration: 2s; 
+  animation-duration: 2s;
   animation-name: aparecer;
   font-size: 20px;
-  
- }
- @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
- }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
-  background-color: rgb(rgb(192, 192, 192), rgb(231, 231, 231), rgb(236, 236, 236));
-  padding: 20px;
-  margin: 30PX 0 25PX 0;
+  padding: 10px;
+  margin: 12px 0 0 10px;
 }
 
 .header_nav {
@@ -89,7 +87,6 @@ footer {
 @media screen and (min-width: 769px) {
   .div_button {
     display: none;
-    
   }
 }
 @media screen and (max-width: 400px) {
@@ -98,5 +95,15 @@ footer {
     margin: 20px;
   }
 }
-
-
+@media screen and (max-width: 426px) {
+  .header_img1 {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+}
