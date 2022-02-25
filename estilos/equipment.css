@@ -1,0 +1,116 @@
+.main {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img img"
+ "somos somos"
+ "tbj tbj"
+ "carnet carnet";
+}
+
+.main .div_main {
+  width: 100%;
+  grid-row: 1;
+  grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img;
+}
+
+.main .main_img1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main .div_tbj {
+  grid-row: 3;
+  grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tbj;
+  text-align: center;
+  font-size: 50px;
+}
+
+.main .div_somos {
+  grid-row: 2;
+  grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: somos;
+  font-size: 35px;
+}
+
+.main .carnets {
+  grid-row: 4;
+  grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: carnet;
+  padding: 40px;
+  text-align: center;
+}
+
+.main .div_carnet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .div_carnet1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 35px 60px 20px 60px;
+}
+
+.main .div_carnet img {
+  width: 100px;
+}
+
+.main .div_carnet1 img {
+  width: 100px;
+}
+
+@media screen and (max-width: 426px) {
+  .main .div_somos {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .main .div_tbj {
+    font-size: 25px;
+    background-color: aquamarine;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .main .div_carnet, .main .img1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .main .div_carnet1, .main .img1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 0px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .main .carnets {
+    padding: 8px;
+  }
+}
+/*# sourceMappingURL=equipment.css.map */

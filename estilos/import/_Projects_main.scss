@@ -1,0 +1,50 @@
+.main {
+    display: grid;
+    grid-template-areas:
+      "img img"
+      "obj obj"
+      "img1 img1"
+      "text1 text1"
+      "img2 img2"
+      "text2 text2";
+ 
+  .main_div {
+    grid-area: img;
+    width: 100%;
+  }
+  .div_h1 {
+    grid-area: obj;
+    text-align: center;
+    font-size: 4rem;
+    margin: 5px;
+  }
+  .main_div1 {
+    grid-area: img1;
+    width: 100%;
+  }
+  .div1_img {
+    width: 100%;
+  }
+  .main_img1 {
+    width: 100%;
+  }
+  .main_div1p {
+    grid-area: text1;
+    font-size: 40px;
+  }
+  .main_div2 {
+    width: 100%;
+    grid-area: img2;
+  }
+  .main_div2p {
+    width: 100%;
+    grid-area: text2;
+    font-size: 40px;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .main_div1p, .main_div2p {
+      font-size: 15px;
+    }
+  }
+}
