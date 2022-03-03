@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action=" " class="formulario">
+      <h1 class="formulario__titulo">contáctanos</h1>
+      <input type="text" class="formulario__input" />
+      <label for="" class="formulario__label">Nombres</label>
+      <input type="text" class="formulario__input" />
+      <label for="" class="formulario__label">correo</label>
+      <input type="text" class="formulario__input" />
+      <label for="" class="formulario__label">telefono</label>
+      <input type="text" class="formulario__input" />
+      <label for="" class="formulario__label">Mensaje</label>
+      <input type="submit" class="formulario__submit" />
+    </form>
+
+    <script>
+      var inputs = document.getElementsByClassName("formulario__input");
+      console.log("inputs", inputs);
+
+      for (let i = 0; i < inputs.length; i++) {
+        const element = inputs[i];
+        element.addEventListener("keyup", function () {          
+          if (this.value.length >= 1) {
+            this.nextElementSibling.classList.add("fijar");
+          } else {
+            this.nextElementSibling.classList.remove("fijar");
+          }
+        });
+        console.log(element, i);
+      }
+    </script>
+  </body>
+</html>

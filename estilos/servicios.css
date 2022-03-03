@@ -63,6 +63,12 @@
   width: 100%;
 }
 
+.div_costado {
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
 @media screen and (max-width: 426px) {
   .main_text,
   .main_text1 {

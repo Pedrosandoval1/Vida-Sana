@@ -49,22 +49,9 @@
 }
 
 .main .div_carnet {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.main .div_carnet1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 35px 60px 20px 60px;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
 }
 
 .main .div_carnet img {
@@ -94,7 +81,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -111,6 +98,12 @@
 @media screen and (max-width: 426px) {
   .main .carnets {
     padding: 8px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .main .div_carnet{
+    margin: 0px;
   }
 }
 /*# sourceMappingURL=equipment.css.map */

@@ -73,11 +73,20 @@
             <p class="div_titulo1">Referencia</p>
             <p class="div_titulo2">se encuentra en San Juan de Lurigancho, José Carlos Mariatuegui, al costado del estadio (JCM)</p>
         </div>
-
-        <div class="formulario">
-            <p>formulario</p>
+        <div class="for_complet">
+        <form action=" " class="formulario">
+          <h1 class="formulario__titulo">contáctanos</h1>
+          <input type="text" class="formulario__input" />
+          <label for="" class="formulario__label">Nombres</label>
+          <input type="text" class="formulario__input" />
+          <label for="" class="formulario__label">correo</label>
+          <input type="text" class="formulario__input" />
+          <label for="" class="formulario__label">telefono</label>
+          <input type="text" class="formulario__input" />
+          <label for="" class="formulario__label">Mensaje</label>
+          <input type="submit" class="formulario__submit" />
+        </form>
         </div>
-        
     </main>
     <footer class="footer">
             <div class="container">
@@ -91,25 +100,25 @@
             </div>
         <div class="container">
             <div class="row">
-              <div class="col-sm-1">
+              <div class="col-sm-1 center">
                 <img
                   src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/64/000000/external-gps-location-xnimrodx-blue-xnimrodx.png"
                 />
               </div>
-              <div class="col-sm-2"><p>nuestro local</p></div>
-              <div class="col-sm-1">
+              <div class="col-sm-2 center"><p>nuestro local</p></div>
+              <div class="col-sm-1 center">
                 <img
                   src="https://img.icons8.com/external-nawicon-flat-nawicon/64/000000/external-phone-call-communication-nawicon-flat-nawicon-2.png"
                 />
               </div>
-              <div class="col-sm-2"><p>nuestro local</p></div>
-              <div class="col-sm-1">
+              <div class="col-sm-2 center"><p>nuestro local</p></div>
+              <div class="col-sm-1 center">
                 <img
                   src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-mail-communication-kiranshastry-lineal-color-kiranshastry.png"
                 />
               </div>
-              <div class="col-sm-2"><p>nuestro local</p></div>
-              <div class="col-sm-1">
+              <div class="col-sm-2 center"><p>nuestro local</p></div>
+              <div class="col-sm-1 center">
                 <img src="https://img.icons8.com/doodle/64/000000/whatsapp.png" />
               </div>
               <div class="col-sm-2"><p>nuestro local</p></div>
@@ -167,6 +176,22 @@
               navMobile.setAttribute("show", "true");
               navMobile.style.display = "block"
           }
+        }
+      </script>
+      <script>
+        var inputs = document.getElementsByClassName("formulario__input");
+        console.log("inputs", inputs);
+  
+        for (let i = 0; i < inputs.length; i++){
+          const element = inputs[i];
+          element.addEventListener("keyup", function () {          
+            if (this.value.length >= 1) {
+              this.nextElementSibling.classList.add("fijar");
+            } else {
+              this.nextElementSibling.classList.remove("fijar");
+            }
+          });
+          console.log(element, i);
         }
       </script>
 </html>
