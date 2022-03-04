@@ -1,2 +1,22 @@
 @import"../estilos/import/services_main";
-@import"../"
+
+$colores:  (
+    "azul": blue,
+    "azul2": #3B86CC,
+    "azul3": #32b1cc
+    
+) !important;
+
+@each $color, $valor in $colores {
+    .titulo--#{$color} {
+        color: $color
+        !important;
+    }
+}
+
+.color{
+    color: #32b1cc !important;
+}
+.color--agrandar{
+    font-size: 50px;
+}
