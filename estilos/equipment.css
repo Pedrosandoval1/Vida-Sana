@@ -38,15 +38,32 @@
   -ms-grid-column-span: 2;
   grid-area: somos;
   font-size: 35px;
-  
+  align-items: center;
+
+}
+.main .div_somos img{
+  width: 100%;
+  height: 1100px;
 }
 .div_somos h1{
   margin-left: 20px;
   font-size:40px;
+  position: absolute;
+  padding-top:250px;
+  padding-left: 700px;
+  color: white;
+  
 }
 .div_somos p{
-  font-size: 30px;
+  font-size: 25px;
   margin: 2px 0 30px 20px;
+  padding: 350px 400px 0px 400px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main .carnets {
@@ -55,7 +72,6 @@
   -ms-grid-column-span: 2;
   grid-area: carnet;
   text-align: center;
-
 }
 
 
@@ -63,18 +79,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 25px;
+  padding-top: 70px;
+  padding-bottom: 90PX;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  
 }
 .div_carnet p{
   margin-bottom: 40px;
   font-size: 20px;
 }
 .main .div_carnet img {
-  width: 120px;
+  width: 160px;
+  height: 170px;
+  
 }
 
 
