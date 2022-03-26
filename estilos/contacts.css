@@ -14,6 +14,7 @@
 
 .main .main_div {
   width: 100%;
+
 }
 
 .main .main_img1 {
@@ -58,11 +59,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 791PX;
+  padding: 10PX 150PX;
+  
 }
 
 .main .div_curva {
-  width: 50%;
+  width: 791PX;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+  transition: all 800ms ease;
+  margin: 5PX;
+  padding: 6px;
 }
 
 .main .div_referencia {
@@ -72,16 +79,21 @@
   grid-area: referencia;
   margin: 15px;
   text-align: start;
+  width: 30px;
 }
 
 .main .div_titulo1 {
-  width: 100%;
+  width: 1100px;
   font-size: 40px;
+  padding: 10PX 150PX;
+
 
 }
 
 .main .div_titulo2 {
   font-size: 30px;
+  padding: 10PX 150PX;
+  width: 1100px;
 }
 
 .main .div_img3 {
@@ -92,6 +104,7 @@
   grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: img3;
+  padding: 10PX 150PX;
 }
 
 .main .div_referencia1 {
@@ -101,6 +114,7 @@
   grid-area: referencia1;
   margin: 15px;
   text-align: start;
+  width: 30px;
 }
 
 
@@ -113,7 +127,8 @@
   grid-area: formulario;
   width: 100%;
  margin-bottom: 20px;
- padding: 5px;
+ padding: 0px 150px;
+
 }
 /*# sourceMappingURL=contacts.css.map */
 .formulario{
@@ -171,27 +186,51 @@
 }
 @media screen and (max-width: 425px) {
   .main .div_titulo1 {
-    font-size: 30px;
+    font-size: 20px;
+    padding: 0px;
+    width: 200px;
   }
   .main .div_titulo2 {
     font-size: 25px;
+    padding: 0px;
+    margin-bottom:20px ;
+    width: 200px;
   }
   .main .main_titulo h1 {
     font-size: 35px;
+
   }
   .main .main_titulo {
-    background-color: #4fa8fb;
+    width: 405px;
   }
 }
 @media screen and (max-width: 425px) {
   .for_complet {
     padding: 10px 2px 0 2px;
     margin-bottom: 0PX;
+    width: 405px;
   }
   .formulario__titulo{
     font-size: 40px;
   }
   .formulario__input{
     font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .div_curva{
+    padding: 0px;
+  }
+  .main .div_img2{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 95%;
+  }
+  .main .div_img3{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 95%;
   }
 }

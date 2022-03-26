@@ -63,7 +63,24 @@
     </div>
     <main class="main">
       <div class="main_div">
-        <img class="main_img1" src="./img/000.jpg" alt="imagen del doctor" />
+        
+        <img class="main_img1" src="./img/perrito1.jpg" alt="imagen del doctor" />
+      <p>SOMOS UNA DE LAS VETERINARIAS RECONOCIDAS A NIVEL SAN JUAN DE LURIGANCHO
+        <br> ¿QUIERES SABER DONDE NOS ENCONTRAMOS?
+      </p>
+      <div class="wrapper">
+        <a class="button" href="./vistas/contactos.html">BUSCANOS</a>
+    </div>
+    
+    <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
       </div>
       <div class="main_section">
         <img class="main_img" src="./img/niño_nuevo.png" alt="imagen de niño" />
@@ -73,6 +90,7 @@
         </p>
       
       </div>
+      
       <div class="main_section1">
         <p class="main_text1">
           somos los indicados en el <br />

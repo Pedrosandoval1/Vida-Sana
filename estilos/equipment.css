@@ -43,21 +43,21 @@
 }
 .main .div_somos img{
   width: 100%;
-  height: 1100px;
+  height: 950px;
 }
 .div_somos h1{
   margin-left: 20px;
-  font-size:40px;
+  font-size:60px;
   position: absolute;
-  padding-top:250px;
-  padding-left: 700px;
+  padding-top:169px;
+  padding-left: 718px;
   color: white;
   
 }
 .div_somos p{
   font-size: 25px;
   margin: 2px 0 30px 20px;
-  padding: 350px 400px 0px 400px;
+ padding:  250px 500px 46px 500px;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -74,7 +74,6 @@
   text-align: center;
 }
 
-
 .main .div_carnet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,24 +87,34 @@
 .div_carnet p{
   margin-bottom: 40px;
   font-size: 20px;
+
 }
 .main .div_carnet img {
   width: 160px;
   height: 170px;
   
 }
-
+@media screen and (max-width: 426px) {
+  .div_somos p{
+    padding:150px 0px 0px 0px ;
+    font-size: 18PX;
+  }
+  .div_somos h1{
+    padding:100px 0px 0px 100px ;
+    font-size: 25PX;
+  }
+}
 
 
 @media screen and (max-width: 426px) {
   .main .div_somos {
-    font-size: 20px;
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 426px) {
   .main .div_tbj {
-    font-size: 25px;
+    font-size: 35px;
     background-color: aquamarine;
   }
 }
