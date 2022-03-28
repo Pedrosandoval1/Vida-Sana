@@ -105,7 +105,7 @@
 .div_carnet p{
   margin-bottom: 40px;
   font-size: 25px;
-
+  
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .main .div_carnet img {
@@ -116,8 +116,9 @@
 }
 @media screen and (max-width: 426px) {
   .div_somos p{
-    padding:150px 0px 0px 0px ;
+    padding: 150px 22px 18px 2px;
     font-size: 18PX;
+    text-align: justify;
   }
   .div_somos h1{
     padding:100px 0px 0px 100px ;
@@ -159,6 +160,4 @@
   }
 }
 
-
-}
 /*# sourceMappingURL=equipment.css.map */
