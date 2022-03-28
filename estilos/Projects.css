@@ -52,6 +52,7 @@
   -ms-grid-row: 4;
   grid-column: 1;
   grid-area: text2;
+  text-align: justify;
 }
 .main_text {
   font-size: 25px;
@@ -61,7 +62,7 @@
   justify-content: center;
   grid-row: 2;
   grid-column: 2;
- 
+  text-align: justify;
    width: 900px;
 padding-left: 90px;
   grid-area: text1;
@@ -122,7 +123,8 @@ padding-right: 83px;
   }
   .main_text, .main_text1{
     font-size: 20px;
-    width: 400px;
+    width: 492px;
+    padding-right: 11px;
   }
 }
 
