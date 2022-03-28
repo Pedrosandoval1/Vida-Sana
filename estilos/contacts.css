@@ -39,15 +39,16 @@
   grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: encabezado;
-  background-color: #4fa8fb;
+  background-color: #17a2b8;
 }
 
 .main .main_titulo h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   font-weight: bold;
   text-align: Regular 400 italic;
-  color: white;
+  font-family: monospace;
+
   
 }
 
@@ -170,7 +171,7 @@
 .formulario__label{
   padding-left: 15px;
   position: absolute;
-  margin-top: -85px;
+  margin-top: -88px;
   z-index: -20;
   color: rgba(0, 0, 0, 0.4);
 }
@@ -182,19 +183,19 @@
   border:none;
 }
 .fijar{
-  margin-top: 135px;
+  margin-top: -130px;
 }
 @media screen and (max-width: 425px) {
   .main .div_titulo1 {
     font-size: 20px;
     padding: 0px;
-    width: 200px;
+    width: 331px;
   }
   .main .div_titulo2 {
     font-size: 25px;
     padding: 0px;
-    margin-bottom:20px ;
-    width: 200px;
+    margin-bottom:-10px ;
+    width: 331px;
   }
   .main .main_titulo h1 {
     font-size: 35px;
@@ -208,7 +209,7 @@
   .for_complet {
     padding: 10px 2px 0 2px;
     margin-bottom: 0PX;
-    width: 405px;
+    width: 420px;
   }
   .formulario__titulo{
     font-size: 40px;
@@ -216,6 +217,12 @@
   .formulario__input{
     font-size: 0.5em;
   }
+  .formulario__input, .formulario__label,
+.formulario__input{
+  font-size:20PX;
+  
+}
+  
 }
 @media screen and (max-width: 425px) {
   .div_curva{
@@ -232,5 +239,9 @@
     flex-direction: column;
     padding: 0px;
     width: 95%;
+  }
+  .main .div_curva {
+    width: 420PX;
+    border-radius: 20PX;
   }
 }

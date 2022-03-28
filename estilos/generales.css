@@ -60,7 +60,11 @@ footer {
  "atención atención"
  "tc tc";
  padding: 10px;
- 
+ color:white;
+background-color: #0A5092
+
+;
+
 }
 .F_H_img1{
   grid-area: img;
@@ -138,8 +142,13 @@ margin-right: 10px;
 
 .header_ul_mobile li {
   border-top: solid 1px black;
-  padding: 10px 6px 10px 6px;
+  padding: 15px 6px 15px 6px;
+  border-top: solid 1px #b0b8db;
+  display: flex;
+  justify-content: center;
+  font-weight: BOLD;
   
+  FONT-SIZE: 30px;
 }
 
 .div_button{
@@ -201,8 +210,8 @@ margin-right: 10px;
 @media screen and (max-width: 426px) {
   
   .header_ul_mobile a {
-    font-size: 20px;
-    font-family: "Constantia", serif
+    font-size: 25px;
+    font-family: sans-serif;
   }
 }
 @media screen and (max-width: 426px) {

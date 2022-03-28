@@ -8,7 +8,7 @@
  "elemento1 elemento1"
  "elemento2 elemento2"
  "elemento3 elemento3";
- 
+
 }
 
 .main_contenedor {
@@ -19,13 +19,13 @@
 
 .main .main_h1 {
   width: 100%;
-  font-size: 50px;
+  font-size: 4rem;
   text-align: center;
   color:black;
-  padding-bottom: 30px;
-  padding-top:40px;
-  border-top: cornflowerblue 10px solid;  
- 
+  padding-bottom: 5px;
+  padding-top:5px; 
+ font-weight: bold;
+  font-family: monospace;
 }
 
 .main .main_div {
@@ -33,15 +33,16 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: text1;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #17a2b8;
+  
 }
-
 .div_contenedor {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: elemento1;
   padding: 50px 160px;
+  
 }
 
 
@@ -73,6 +74,7 @@
   font-size: 60px;
   text-align: center;
   color:  gray;
+ 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
