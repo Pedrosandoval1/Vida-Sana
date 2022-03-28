@@ -52,7 +52,7 @@
   -ms-grid-row: 4;
   grid-column: 1;
   grid-area: text2;
-  text-align: justify;
+  
 }
 .main_text {
   font-size: 25px;
@@ -62,7 +62,7 @@
   justify-content: center;
   grid-row: 2;
   grid-column: 2;
-  text-align: justify;
+  
    width: 900px;
 padding-left: 90px;
   grid-area: text1;
@@ -108,7 +108,7 @@ padding-left: 90px;
     width: 300px;
     height: 200px;
     box-shadow: none;
-padding-right: 83px;
+  padding-right: 83px;
   }
   .main_section{
     display: flex;
@@ -119,12 +119,19 @@ padding-right: 83px;
   .main_section1{
     display: flex;
     flex-direction: column-reverse;
-    padding:  10px 64px 32px 150px;
+    padding:  10px 64px 70px 150px;
   }
-  .main_text, .main_text1{
+ .main_text{
+   font-size: 20px;
+   width: 431px;
+   padding-left: 72px;
+   text-align: none;
+ }
+  .main_text1{
     font-size: 20px;
-    width: 492px;
-    padding-right: 11px;
+    width: 438px;
+    padding-right: 84px;
+    text-align: none;
   }
 }
 

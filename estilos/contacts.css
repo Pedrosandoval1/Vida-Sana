@@ -190,24 +190,28 @@
     font-size: 20px;
     padding: 0px;
     width: 331px;
+    font-family: sans-serif;
   }
   .main .div_titulo2 {
     font-size: 25px;
     padding: 0px;
     margin-bottom:-10px ;
     width: 331px;
+    ont-family: sans-serif;
   }
   .main .main_titulo h1 {
     font-size: 35px;
+    font-family: sans-serif;
 
   }
   .main .main_titulo {
     width: 420px;
+    font-family: sans-serif;
   }
 }
 @media screen and (max-width: 425px) {
   .for_complet {
-    padding: 10px 2px 0 2px;
+    padding: 1px 2px 0 2px;
     margin-bottom: 0PX;
     width: 420px;
   }
